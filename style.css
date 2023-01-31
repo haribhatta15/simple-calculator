@@ -1,0 +1,59 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  background: orange;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.container {
+  background: white;
+  max-width: 400px;
+  box-shadow: 0 0 15px black;
+}
+
+.display {
+  height: 100px;
+  padding: 1rem 0.5rem;
+  font-size: 2rem;
+  color: black;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  background: rgb(180, 189, 255);
+}
+
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.buttons > div {
+  border: 1px solid #999;
+}
+
+.button {
+  font-weight: bold;
+  color: black;
+  text-align: center;
+  cursor: pointer;
+  font-size: 2rem;
+  padding: 1.5rem;
+}
+
+.button:hover {
+  background: rgba(0, 0, 0, 0.33);
+}
+
+#equal {
+  grid-column: span 2;
+}
